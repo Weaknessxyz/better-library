@@ -52,6 +52,7 @@ body {
   font-size: 1.5rem;
   color: #EDE3E9;
   background: linear-gradient(#9F84BD, #853db6);
+  box-shadow: .3rem .3rem .2rem rgba(0, 0, 0, .5);
   padding: 2rem;
   border-radius: 1.5rem;
 }
@@ -114,7 +115,7 @@ body {
   opacity: 0;
   transform: translateY(-1rem);
   transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
-  box-shadow: .2rem .2rem .2rem .1rem rgba(0, 0, 0, .2);
+  box-shadow: .3rem .3rem .2rem rgba(0, 0, 0, .5);
 }
 
 .active {
