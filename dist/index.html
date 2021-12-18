@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>better library</title>
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <div class="header__container">
+    <div class="header__title text">
+      📚 Better Library
+    </div>
+  </div>
+
+  <div class="library__container">
+    <div class="library__new-book-dropdown">
+      <button class="library__add-button">+</button>
+      <form class="library__form text">
+        <label for="title">Book title:</label>
+        <input type="text" id="title" name="title" required>
+        <label for="author">Author:</label>
+        <input type="text" id="author" name="author" required>
+        <label for="pages">Pages:</label>
+        <input type="number" id="pages" name="pages" required>
+        <div>
+          Read Book:
+        </div>
+        <div>
+          <label for="hasRead">Yes</label>
+          <input type="radio" id="hasRead" name="read" value="true">
+          <label for="hasNotRead">No</label>
+          <input type="radio" id="hasNotRead" name="read" value="false">
+        </div>
+        <button class="library__form-submit text">Submit</button>
+      </form>
+    </div>
+
+  </div>
+</body>
+</html>
