@@ -55,6 +55,11 @@ function loadLibrarySkeleton() {
 
   // Create a new Book through form
   formSubmitBtn.addEventListener('click', () => {
+    if (
+      !document.querySelector('#title').checkValidity()
+      || !document.querySelector('#author').checkValidity()
+      || !document.querySelector('#pages').checkValidity()
+    ) return;
     myLibrary.addBook(new Book(
       bookDropdownForm[0].value,
       bookDropdownForm[1].value,

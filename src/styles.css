@@ -133,6 +133,10 @@ body {
   text-align: center;
 }
 
+input:invalid {
+  border: 0.1rem solid red;
+}
+
 .library__form-submit {
   margin-top: 1rem !important; 
   background: #C09BD8;
