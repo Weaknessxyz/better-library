@@ -66,8 +66,6 @@ function loadLibrarySkeleton() {
 }
 
 function loadLibraryContent() {
-  if (!localStorage.key(0)) return;
-
   for (let i = 0; i < myLibrary.books.length; i += 1) {
     const newCard = document.createElement('div');
     newCard.innerHTML = myLibrary.books[i].getHTMLcontent(i);
@@ -95,13 +93,15 @@ function loadLibraryContent() {
   }
 }
 
-for (let i = 0; i < myStorage.length; i += 1) {
-  myLibrary.addBook(new Book(
-    myStorage[i].title,
-    myStorage[i].author,
-    myStorage[i].pages,
-    myStorage[i].isRead,
-  ));
+if (localStorage.key(0)) {
+  for (let i = 0; i < myStorage.length; i += 1) {
+    myLibrary.addBook(new Book(
+      myStorage[i].title,
+      myStorage[i].author,
+      myStorage[i].pages,
+      myStorage[i].isRead,
+    ));
+  }
 }
 
 loadLibrarySkeleton();
